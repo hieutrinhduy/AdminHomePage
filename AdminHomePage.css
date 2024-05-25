@@ -1,0 +1,727 @@
+*{
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+.nav-bar{
+    background-color: #262626; 
+    height: 2100px; 
+    padding: 0;
+}
+
+.fa-circle-plus{
+    margin-top: 20px; margin-left: 10px;
+}
+
+
+.nav-bar-selection-list{
+    margin-top: 10px;
+}
+.main-content{
+    background-color: #070707; height: 2100px;  padding: 0;
+}
+
+
+.logo {
+    margin-top: 42px;
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.nav-bar-selection-list{
+    padding-top: 10px;
+    /* margin-left: 53px; */
+    color: white;
+    margin-top: 30px;
+    list-style: none;
+    width: 100%;
+    /* border-top: 1px solid rgb(255, 255, 255, 0.4);; */
+}
+.nav-bar-selection-list h2{
+    font-size: 16px;
+    margin-left: 45px;
+    font-weight: bold;
+}
+.nav-bar-selection {
+    width: 100%;
+}
+.nav-bar-selection button {
+    width: 100%;
+    padding-left: 55px;
+    background-color: rgb(0,0,0,0);
+    border: none;
+}
+.nav-bar-selection i {
+    float: left;
+    font-size: 16px;
+    margin-right: 15px;
+    line-height: 16px;
+    margin-top: 5px;
+}
+.nav-bar-selection p{
+    float: left;
+    line-height: 16px;
+    margin-top:  5px;
+    margin-bottom:  5px;
+}
+.nav-bar-selection:hover {
+    background-color: rgb(255, 255, 255,0.05);
+}
+.line {
+    border-top: 1px solid white; /* Định dạng cho đường kẻ */
+    width: 80%; /* Độ rộng của đường kẻ */
+    margin-right: auto;
+    margin-left: auto;
+}
+.nav-bar-selection h3{
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    line-height: 16px;
+}
+
+.search-container {
+    display: inline-block;
+    align-items: center;
+    /* display: inline-block; */
+    /* margin-top: 40px; */
+    width: 100%;
+}
+  
+.search-container input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    width: 638px;
+    height: 59px;
+    margin-left: 40px;
+    font-size: 16px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.search-container button.search-button svg {
+    fill: #000;
+    width: 1.2em;
+    height: 1.2em;
+}
+.header{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.header_anchor {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin: 0 20px 0px 20px;
+}
+.header_anchor:hover {
+    text-decoration: none;
+    color: #F69B12;
+}
+.search-container button{
+    font-size: 26px;
+    background-color: none;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    line-height: 26px;
+    font-weight: lighter;
+    float: right;
+    margin-top: 60px;
+}
+.persional_profile{
+    width: 173px;
+    height: 72px;
+    background-color: white;
+    border-radius: 30px;
+    float: right;
+    position: relative; 
+    margin-top: 40px;
+    margin-right: 20px;
+    align-items: center;
+}
+.persional_profile .name {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    top: 50%; /* Đặt phần tử ở giữa theo chiều dọc */
+    left: 25%; /* Đặt phần tử ở giữa theo chiều ngang */
+    transform: translate(-50%, -50%);
+    border-radius: 33px;
+    float: right;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+.profile_link {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    top: 50%; /* Đặt phần tử ở giữa theo chiều dọc */
+    left: 25%; /* Đặt phần tử ở giữa theo chiều ngang */
+    transform: translate(-50%, -50%);
+    border-radius: 33px;
+    float: right;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.avatar_img{
+    height: 57px;
+    width: 57px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    top: 50%; /* Đặt phần tử ở giữa theo chiều dọc */
+    left: 25%; /* Đặt phần tử ở giữa theo chiều ngang */
+    transform: translate(-50%, -50%);
+    border-radius: 33px;
+}
+
+#body{
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.body_content{
+    width: 100%;
+    display: block;
+    margin-top: 60px;
+}
+
+.body_content .title{
+    font-size: 16px;
+    color: white;
+    margin-left: 20px;
+    font-weight: normal;
+}
+.body_content .big_title{
+    margin-top: 7px;
+    font-size: 40px;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.rectangle_img {
+    display: inline-block;
+    margin-left: 10px;
+}
+.rectangle_img img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+.music_name{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 0;
+    display: block;
+}
+.music_artist{
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+}
+.one_row{
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+}
+.one_row .banner{
+    width: 25%;
+    height: 105px;
+    display: inline-block;
+}
+.one_row .top{
+    width: 30%;
+    height: 134px;
+    display: inline-block;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.top h1{
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 134px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.top img{
+    width: 28%;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 83px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+.top p{
+    align-items: center;
+    margin: 0;
+    font-size: 16px;
+}
+.genre_content{
+    margin-top: 35px;
+    width: 400px;
+    margin-left: 20px;
+}
+.genre_content h2{
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    display: inline;
+    margin-bottom: 10px;
+}
+.genre_content a{
+    font-size: 20px;
+    margin: 0;
+    font-weight: normal;
+    color: white;
+    float: right;
+    margin-bottom: 10px;
+}
+.genre_content img{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    display: inline-block;
+}
+.genre_content .p18{
+    font-size: 18px;
+    margin: 0px;
+    color: white;
+    font-weight: bold;
+}
+.genre_content .p16{
+    font-size: 16px;
+    margin: 0px;
+    color: white;
+    font-weight: lighter;
+}
+
+.statistic div .box{
+    margin-top: 30px;
+    background-color: white;
+    height: 135px;
+    width: 327px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.statistic div .box h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    position: absolute; /* Đặt vị trí của phần tử con */
+    top: 72px; /* Dịch chuyển phần tử con từ phía trên xuống dưới 50px */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.statistic div .box .box_line{
+    border-top: 1px solid black; /* Đường thẳng có độ dày 1px và màu đen */
+    width: 60%; /* Chiều rộng đường thẳng */
+    position: absolute; /* Đặt vị trí của phần tử con */
+    top: 110px; /* Dịch chuyển phần tử con từ phía trên xuống dưới 50px */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.statistic div .box .percentage{
+    position: absolute; /* Đặt vị trí của phần tử con */
+    top: 65px; /* Dịch chuyển phần tử con từ phía trên xuống dưới 50px */
+    left: 216px; 
+    font-size: 16px;
+    font-weight: bold;
+    color: #12B823;
+}
+.statistic div .box .Description{
+    position: absolute; /* Đặt vị trí của phần tử con */
+    top: 7px; /* Dịch chuyển phần tử con từ phía trên xuống dưới 50px */
+    left: 216px; 
+    font-size: 16px;
+    font-weight: lighter;
+    color: black;
+    text-align: center;
+}
+.statistic div .box img{
+    position: absolute; /* Đặt vị trí của phần tử con */
+    top: -26px; /* Dịch chuyển phần tử con từ phía trên xuống dưới 50px */
+    left: 33px; 
+}
+
+.more {
+    float: right;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.col-md-6{
+    margin-top: 20px;
+    position: relative;
+    height:  300px;
+}
+.bar-chart{
+    position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+}
+.bar-chart p{
+    position: absolute;
+    top: 184px;
+    left: 200px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+}
+.bar-chart img{
+    position: absolute;
+    top: -29px;
+    left: 11px;
+}
+
+.outer-wrapper {
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+    max-width: fit-content;
+    max-height: fit-content;
+}
+.table-wrapper {
+    
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: fit-content;
+    max-height: 66.4vh;
+    
+    margin-top: 22px;
+    
+    margin: 15px;
+    padding-bottom: 20px;
+}
+
+
+table {
+    border-radius: 10px;
+    background-color: white;
+    min-width: max-content;
+    color: #262626;
+    border-collapse: separate;
+    border-spacing: 0px;    
+    width: 1000px; /* Fixed width */
+}
+
+
+
+table th{
+    position: sticky; 
+    top: 0px;
+    
+    background-color: #133b5c;
+    background-color: white;
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+    outline: 0.7px solid black;
+    border: 1.5px solid black;
+} 
+.marginl-40 {
+    margin-left: 40px;
+}
+.marginl-20 {
+    margin-left: 20px;
+}
+.marginr-40 {
+    margin-right: 40px;
+}
+
+table th, table td {
+    background-color: white;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100px;
+}
+
+table td {
+    background-color: white;
+    text-align: left;
+    font-size: 15px;
+    border: 1px solid rgb(177, 177, 177);
+    padding-left: 20px;
+}
+
+@media ( (min-width: 993px) and (max-width:1283px)){
+    .search-container input[type="text"] {
+            width: 415px;
+        }
+    .logo {
+        font-size: 49px;
+    }
+    .nav-bar-selection i{
+        margin-top: 5px;
+    }
+    .nav-bar-selection button{
+        padding-left: 23px;
+    }
+    .statistic div .box {
+        width: 229px;
+        height: 123px;
+    }
+    .statistic div .box img {
+        top: -29px;
+        left: 11px;
+    }
+    .statistic div .box .Description{
+        left: 171px;
+    }
+    .statistic div .box .percentage{
+        top: 55px;
+    left: 133px;
+    }
+    .col-md-6 {
+        height: 300px;
+        width: 100%;
+        padding-left: 188px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .bar-chart{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .one_row .top{
+        width: 48%;
+        margin-left: 206px;
+        margin-bottom: 27px;
+    }
+    .main-content{
+        height: 2900px;
+    }
+    .nav-bar{
+        height: 2900px;
+    }
+}
+
+@media ( (min-width: 769px) and (max-width:992px)){
+    .logo {
+        font-size: 35px;
+    }
+    .nav-bar-selection button {
+        padding-left: 12px;
+    }
+    .nav-bar-selection-list h2{
+        margin-left: 13px;
+    }
+    .search-container input[type="text"] {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        outline: none;
+        width: 276px;
+        height: 59px;
+        margin-left: 40px;
+        font-size: 16px;
+        margin-right: 20px;
+        margin-top: 40px;
+    }
+    .persional_profile {
+        width: 125px;
+        height: 53px;
+        background-color: white;
+        border-radius: 30px;
+        float: right;
+        position: relative;
+        margin-top: 40px;
+        margin-right: 20px;
+        align-items: center;
+    }
+    .avatar_img {
+        height: 45px;
+        width: 45px;
+        background-color: #D9D9D9;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        border-radius: 33px;
+    }
+    .statistic div .box {
+        margin-top: 42px;
+        background-color: white;
+        height: 135px;
+        width: 327px;
+        border-radius: 10px;
+        position: relative;
+        margin-left: 145px;
+    }
+    .col-md-4 .box{
+        margin: 0;
+    }
+    .one_row .top {
+        width: 90%;
+        height: 134px;
+        display: inline-block;
+        background-color: white;
+        margin-left: 20px;
+        border-radius: 20px;
+        position: relative;
+        margin-bottom: 35px;
+    }
+    .top img {
+        width: 13%;
+        border-radius: 10px;
+        display: inline-block;
+        margin-bottom: 83px;
+        margin-right: 15px;
+        vertical-align: middle;
+    }
+    .col-sm-4 {
+        width: 100%;
+    }
+    .main-content {
+        background-color: #070707;
+        height: 3225px;
+        padding: 0;
+    }
+    .nav-bar{
+        height: 3225px;
+    }
+    .col-md-6{
+        margin-bottom: 20px;
+        position: relative;
+        height: 300px;
+    }
+    .bar-chart{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+}
+
+@media ( (min-width: 414px) and (max-width: 768px)){
+    .logo{
+        padding-top: 38px;
+        margin-top: 0;
+    }
+    .nav-bar {
+        background-color: #262626;
+        height: 669px;
+        padding: 0;
+    }
+    .search-container input[type="text"] {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        outline: none;
+        width: 305px;
+        height: 59px;
+        margin-left: 40px;
+        font-size: 16px;
+        margin-right: 20px;
+        margin-top: 40px;
+    }
+    .persional_profile {
+        width: 128px;
+        height: 52px;
+        background-color: white;
+        border-radius: 30px;
+        float: right;
+        position: relative;
+        margin-top: 40px;
+        margin-right: 6px;
+        align-items: center;
+    }
+    .avatar_img {
+        height: 40px;
+        width: 40px;
+        background-color: #D9D9D9;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        border-radius: 33px;
+    }
+    .col-md-4 {
+        position: relative;
+    }
+    .box{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .col-md-6{
+        position: relative;
+        height: 300px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .bar-chart{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .one_row {
+        position: relative;
+    }
+    .one_row .top {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+        width: 100%;
+        height: 134px;
+        display: inline-block;
+        background-color: white;
+        margin-left: 20px;
+        border-radius: 20px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .main-content {
+        background-color: #070707;
+        height: 3700px;
+        padding: 0;
+    }
+    .top img {
+        width: 18%;
+        border-radius: 10px;
+        display: inline-block;
+        margin-bottom: 83px;
+        margin-right: 15px;
+        vertical-align: middle;
+    }
+}
