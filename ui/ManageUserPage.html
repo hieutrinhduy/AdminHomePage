@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Manage User Page</title>
+    <link rel="stylesheet" href="./ManageUserPage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <script src="https://kit.fontawesome.com/3cfd9b0fdc.js" crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main row">
+            <div class="nav-bar col-sm-2">
+                <h1 class="logo">
+                    LOGO
+                </h1>
+                <ul class=" nav-bar-selection-list">
+                    <div class="line"></div>
+                    <h2>Dash Board </h2>
+                    <li class="nav-bar-selection currently">
+                        <a href="/AdminHomePage.html">
+                            <button>
+                                <i class="fa-regular fa-compass"></i>
+                                <p>Tổng quan</p>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class=" nav-bar-selection-list">
+                    <div class="line"></div>
+                    <h2>Quản lý </h2>
+                    <li class="nav-bar-selection currently">
+                        <button>
+                            <i class="fa-regular fa-compass"></i>
+                            <p>Nội dung </p>
+                        </button>
+                    </li>
+                    <li class="nav-bar-selection new-release" style="background-color: #313131;">
+                        <button>
+                            <i class="fa-regular fa-user"></i>
+                            <p>Người dùng</p>
+                        </button>
+                    </li>
+                    <li class="nav-bar-selection new-release">
+                        <button>
+                            <i class="fa-solid fa-list"></i>
+                            <p>Thống kê</p>
+                        </button>
+                    </li>
+                </ul>
+
+                <ul class=" nav-bar-selection-list">
+                    <div class="line"></div>
+                    <li class="nav-bar-selection currently">
+                        <button>
+                            <h3>Gửi thông báo </h3>
+                        </button>
+                    </li>
+                </ul>
+                <ul class=" nav-bar-selection-list">
+                    <div class="line"></div>
+                    <h2>Tài khoản </h2>
+                    <li class="nav-bar-selection currently">
+                        <button>
+                            <i class="fa-regular fa-file"></i>
+                            <p>Hồ sơ </p>
+                        </button>
+                    </li>
+                    <li class="nav-bar-selection new-release">
+                        <button>
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <p>Log out </p>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-content col-sm-10">
+                <div class="header">
+                    <div class="search-container">
+                        <i class="fa-solid fa-filter" style="color: #ffffff;">
+                            <p style="margin-top: 5px;">Bộ lọc</p>
+                        </i>
+
+                        <div class="persional_profile">
+                            <button>
+                                <div class="avatar_img">
+
+                                </div>
+
+                            </button>
+                        </div>
+                        <button>
+                            <i class="fa-solid fa-gear" style="margin-right: 30px;"></i>
+                        </button>
+                        <button>
+                            <i class="fa-regular fa-bell" style="margin-left: 30px;margin-right: 30px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="filter_search">
+                    <div class="filter_item">
+                        <div class="filter_name">Họ và tên</div>
+                        <input type="text" class="filter_input" placeholder="Nhập họ và tên">
+                    </div>
+                    <div class="filter_item">
+                        <div class="filter_name">Username</div>
+                        <input type="text" class="filter_input" placeholder="Nhập username">
+                    </div>
+                    <div class="filter_item">
+                        <div class="filter_name">Email</div>
+                        <input type="text" class="filter_input" placeholder="Nhập email">
+                    </div>
+                    <div class="filter_item">
+                        <div class="filter_button_search">Tìm kiếm</div>
+                    </div>
+                    <div class="filter_item">
+                        <div class="filter_name">Loại tài khoản</div>
+                        <input type="text" class="filter_input" placeholder="Nhập loại tài khoản">
+                    </div>
+                    <div class="filter_item">
+                        <div class="filter_name">Vai trò</div>
+                        <input type="text" class="filter_input" placeholder="Nhập vai trò">
+                    </div>
+                    <div class="filter_item">
+                        <div class="filter_name">Trạng thái</div>
+                        <input type="text" class="filter_input" placeholder="Nhập trạng thái của account">
+                    </div>
+                    <div class="filter_item">
+                        <div class="filter_button_reset">Reset</div>
+                    </div>
+                </div>
+
+                <div class="outer-wrapper">
+                    <div class="container_table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Username</th>
+                                    <th>Họ & Tên</th>
+                                    <th>Vai Trò</th>
+                                    <th>Email</th>
+                                    <th>Trạng Thái</th>
+                                    <th>Hành Động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>johndoe</td>
+                                    <td>John Doe</td>
+                                    <td>Admin</td>
+                                    <td>johndoe@example.com</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <button class="btn-edit">Sửa</button>
+                                        <button class="btn-delete">Xóa</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>janedoe</td>
+                                    <td>Jane Doe</td>
+                                    <td>User</td>
+                                    <td>janedoe@example.com</td>
+                                    <td>Inactive</td>
+                                    <td>
+                                        <button class="btn-edit">Sửa</button>
+                                        <button class="btn-delete">Xóa</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>johndoe</td>
+                                    <td>John Doe</td>
+                                    <td>Admin</td>
+                                    <td>johndoe@example.com</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <button class="btn-edit">Sửa</button>
+                                        <button class="btn-delete">Xóa</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>janedoe</td>
+                                    <td>Jane Doe</td>
+                                    <td>User</td>
+                                    <td>janedoe@example.com</td>
+                                    <td>Inactive</td>
+                                    <td>
+                                        <button class="btn-edit">Sửa</button>
+                                        <button class="btn-delete">Xóa</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>johndoe</td>
+                                    <td>John Doe</td>
+                                    <td>Admin</td>
+                                    <td>johndoe@example.com</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <button class="btn-edit">Sửa</button>
+                                        <button class="btn-delete">Xóa</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>janedoe</td>
+                                    <td>Jane Doe</td>
+                                    <td>User</td>
+                                    <td>janedoe@example.com</td>
+                                    <td>Inactive</td>
+                                    <td>
+                                        <button class="btn-edit">Sửa</button>
+                                        <button class="btn-delete">Xóa</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>johndoe</td>
+                                    <td>John Doe</td>
+                                    <td>Admin</td>
+                                    <td>johndoe@example.com</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <button class="btn-edit">Sửa</button>
+                                        <button class="btn-delete">Xóa</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>janedoe</td>
+                                    <td>Jane Doe</td>
+                                    <td>User</td>
+                                    <td>janedoe@example.com</td>
+                                    <td>Inactive</td>
+                                    <td>
+                                        <button class="btn-edit">Sửa</button>
+                                        <button class="btn-delete">Xóa</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>9</td>
+                                    <td>janedoe</td>
+                                    <td>Jane Doe</td>
+                                    <td>User</td>
+                                    <td>janedoe@example.com</td>
+                                    <td>Inactive</td>
+                                    <td>
+                                        <button class="btn-edit">Sửa</button>
+                                        <button class="btn-delete">Xóa</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>janedoe</td>
+                                    <td>Jane Doe</td>
+                                    <td>User</td>
+                                    <td>janedoe@example.com</td>
+                                    <td>Inactive</td>
+                                    <td>
+                                        <button class="btn-edit">Sửa</button>
+                                        <button class="btn-delete">Xóa</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>janedoe</td>
+                                    <td>Jane Doe</td>
+                                    <td>User</td>
+                                    <td>janedoe@example.com</td>
+                                    <td>Inactive</td>
+                                    <td>
+                                        <button class="btn-edit">Sửa</button>
+                                        <button class="btn-delete">Xóa</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
