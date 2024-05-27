@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Admin Home Page</title>
     <link rel="stylesheet" href="AdminHomePage.css">
+    <link rel="stylesheet" href="./ui/ManageUserPage.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
     <script src="https://kit.fontawesome.com/3cfd9b0fdc.js" crossorigin="anonymous"></script>
     <style>
-        
+
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="main row">
-            <div class="nav-bar col-sm-2" >
+            <div class="nav-bar col-sm-2">
                 <h1 class="logo">
                     LOGO
                 </h1>
                 <ul class=" nav-bar-selection-list">
                     <div class="line"></div>
-                        <h2>Dash Board </h2>
+                    <h2>Dash Board </h2>
                     <li class="nav-bar-selection currently">
                         <button>
                             <i class="fa-regular fa-compass"></i>
@@ -42,10 +45,12 @@
                         </button>
                     </li>
                     <li class="nav-bar-selection new-release">
-                        <button>
-                            <i class="fa-regular fa-user"></i>
-                            <p>Người dùng</p>
-                        </button>
+                        <a href="./ui/ManageUserPage.html">
+                            <button>
+                                <i class="fa-regular fa-user"></i>
+                                <p>Người dùng</p>
+                            </button>
+                        </a>
                     </li>
                     <li class="nav-bar-selection new-release">
                         <button>
@@ -80,7 +85,7 @@
                     </li>
                 </ul>
             </div>
-             <div class="main-content col-sm-10">          
+            <div class="main-content col-sm-10">
                 <div class="header">
                     <div class="search-container">
                         <input type="text" placeholder="Tìm kiếm bài hát...">
@@ -88,9 +93,9 @@
                         <div class="persional_profile">
                             <button>
                                 <div class="avatar_img">
-    
+
                                 </div>
-                            
+
                             </button>
                         </div>
                         <button>
@@ -105,7 +110,7 @@
                     <div class="body_content">
                         <p class="title">Tổng quan</p>
                         <h1 class="big_title">Thống kê ngày</h1>
-                         <div class="row statistic">
+                        <div class="row statistic">
                             <div class="col-md-4">
                                 <div class="box" .marginl-40>
                                     <h1>212.123</h1>
@@ -125,7 +130,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="box"  marginr-40>
+                                <div class="box" marginr-40>
                                     <h1>212.123</h1>
                                     <p class="percentage">+30%</p>
                                     <div class="box_line"></div>
@@ -133,14 +138,14 @@
                                     <img src="Img/Static/UserAmount.png" alt="">
                                 </div>
                             </div>
-                         </div>   
-                         <a href="" class="more">Xem thêm</a>
+                        </div>
+                        <a href="" class="more">Xem thêm</a>
                     </div>
 
                     <div class="body_content">
                         <p class="title">Tổng quan</p>
                         <h1 class="big_title">Thống kê người dùng theo tuần/ tháng</h1>
-                         <div class="row">
+                        <div class="row">
                             <div class="col-md-6">
                                 <div class="bar-chart">
                                     <div id="columnchart_values" style="width: 100%; height: 300px"></div>
@@ -152,47 +157,50 @@
                                     <div id="chart_div" style="width: 100%; height: 300px;"></div>
                                 </div>
                             </div>
-                         </div>
-                         <a href="" class="more">Xem thêm</a>
+                        </div>
+                        <a href="" class="more">Xem thêm</a>
                     </div>
-                    
+
 
                     <div class="body_content">
                         <p class="title">Tổng quan</p>
                         <h1 class="big_title">Bài hát của ngày</h1>
                         <div class="one_row">
-                            <div class="top"> 
+                            <div class="top">
                                 <h1>#1</h1>
                                 <img src="chung ta cua hien tai.jpg" class="img-fluid" alt="Image 1">
                                 <div class="" style="width: 35%; display: inline-block; line-height: 16px;">
-                                    <p style="font-size: 18px; font-weight: bold; margin-top: 10px;">Chúng ta của tương lai</p>
+                                    <p style="font-size: 18px; font-weight: bold; margin-top: 10px;">Chúng ta của tương
+                                        lai</p>
                                     <p style="font-size: 16px; margin-top: 5px;">Sơn Tùng MTP</p>
                                     <P style="font-size: 16px; margin-top: 20px; ">Lượt nghe:</P>
                                     <p style="font-size: 16px">1231k</p>
                                 </div>
                             </div>
-                            <div class="top"> 
+                            <div class="top">
                                 <h1>#2</h1>
                                 <img src="le luu ly.jpg" class="img-fluid" alt="Image 1">
                                 <div class="" style="width: 35%; display: inline-block; line-height: 16px;">
-                                    <p style="font-size: 18px; font-weight: bold; margin-top: 10px;">Chúng ta của tương lai</p>
+                                    <p style="font-size: 18px; font-weight: bold; margin-top: 10px;">Chúng ta của tương
+                                        lai</p>
                                     <p style="font-size: 16px; margin-top: 5px;">Lệ lưu ly</p>
                                     <P style="font-size: 16px; margin-top: 20px; ">Lượt nghe:</P>
                                     <p style="font-size: 16px">1231k</p>
                                 </div>
                             </div>
-                            <div class="top"> 
+                            <div class="top">
                                 <h1>#3</h1>
                                 <img src="le luu ly.jpg" class="img-fluid" alt="Image 1">
                                 <div class="" style="width: 35%; display: inline-block; line-height: 16px;">
-                                    <p style="font-size: 18px; font-weight: bold; margin-top: 10px;">Chúng ta của tương lai</p>
+                                    <p style="font-size: 18px; font-weight: bold; margin-top: 10px;">Chúng ta của tương
+                                        lai</p>
                                     <p style="font-size: 16px; margin-top: 5px;">Lệ lưu ly</p>
                                     <P style="font-size: 16px; margin-top: 20px; ">Lượt nghe:</P>
                                     <p style="font-size: 16px">1231k</p>
                                 </div>
                             </div>
-                           </div>
-                           <a href="" class="more">Xem thêm</a>
+                        </div>
+                        <a href="" class="more">Xem thêm</a>
                     </div>
                     <div class="body_content">
                         <p class="title">Tổng quan</p>
@@ -200,190 +208,193 @@
                         <div class="table"></div>
                     </div>
                     <div class="outer-wrapper">
-                    <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <th style="font-weight: bold; font-size: larger;">Xu hướng tìm kiếm</th>
-                            <th style="font-weight: bold; font-size: larger; color: #ABABAB;">Lượt tìm kiếm</th>
-                            <th style="font-weight: bold; font-size: larger; color: #ABABAB;">Lượt nghe</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Say em</td>
-                                <td>1000.123</td>
-                                <td>231.000</td>
-                            </tr>
-                            <tr>
-                                <td>Tại vì sao</td>
-                                <td>1000.123</td>
-                                <td>231.000</td>
-                            </tr>
-                            <tr>
-                                <td>Chúng ta của tương lai</td>
-                                <td>1000.123</td>
-                                <td>231.000</td>
-                            </tr>
-                            <tr>
-                                <td>Say em</td>
-                                <td>1000.123</td>
-                                <td>231.000</td>
-                            </tr>
-                            <tr>
-                                <td>Say em</td>
-                                <td>1000.123</td>
-                                <td>231.000</td>
-                            </tr>
-                            <tr>
-                                <td>Say em</td>
-                                <td>1000.123</td>
-                                <td>231.000</td>
-                            </tr>
-                            <tr>
-                                <td>Value 1</td>
-                                <td>Value 2</td>
-                                <td>Value 3</td>
-                            </tr>
-                            <tr>
-                                <td>Value 1</td>
-                                <td>Value 2</td>
-                                <td>Value 3</td>
-                            </tr>
-                            <tr>
-                                <td>Value 1</td>
-                                <td>Value 2</td>
-                                <td>Value 3</td>
-                            </tr>
-                            <tr>
-                                <td>Value 1</td>
-                                <td>Value 2</td>
-                                <td>Value 3</td>
-                            </tr>
-                            <tr>
-                                <td>Value 1</td>
-                                <td>Value 2</td>
-                                <td>Value 3</td>
-                            </tr>
-                            <tr>
-                                <td>Value 1</td>
-                                <td>Value 2</td>
-                                <td>Value 3</td>
-                            </tr>
-                            <tr>
-                                <td>Value 1</td>
-                                <td>Value 2</td>
-                                <td>Value 3</td>
-                            </tr>
-                            <tr>
-                                <td>Value 1</td>
-                                <td>Value 2</td>
-                                <td>Value 3</td>
-                            </tr>
-                            <tr>
-                                <td>Value 1</td>
-                                <td>Value 2</td>
-                                <td>Value 3</td>
-                            </tr>
-                            <tr>
-                                <td>Value 1</td>
-                                <td>Value 2</td>
-                                <td>Value 3</td>
-                            </tr>
-                            <tr>
-                                <td>Value 1</td>
-                                <td>Value 2</td>
-                                <td>Value 3</td>
-                            </tr>
-                            <tr>
-                                <td>Value 1</td>
-                                <td>Value 2</td>
-                                <td>Value 3</td>
-                            </tr>
-                            <tr>
-                                <td>Value 1</td>
-                                <td>Value 2</td>
-                                <td>Value 3</td>
-                            </tr>
-                            <tr>
-                                <td>Value 1</td>
-                                <td>Value 2</td>
-                                <td>Value 3</td>
-                            </tr>
-                            <tr>
-                                <td>Value 1</td>
-                                <td>Value 2</td>
-                                <td>Value 3</td>
-                            </tr>
-                
-                        </tbody>
-                    </table>
-                </div>
-                </div>
-                        <a href="" class="more">Xem thêm</a>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead>
+                                    <th style="font-weight: bold; font-size: larger;">Xu hướng tìm kiếm</th>
+                                    <th style="font-weight: bold; font-size: larger; color: #ABABAB;">Lượt tìm kiếm</th>
+                                    <th style="font-weight: bold; font-size: larger; color: #ABABAB;">Lượt nghe</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Say em</td>
+                                        <td>1000.123</td>
+                                        <td>231.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tại vì sao</td>
+                                        <td>1000.123</td>
+                                        <td>231.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chúng ta của tương lai</td>
+                                        <td>1000.123</td>
+                                        <td>231.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Say em</td>
+                                        <td>1000.123</td>
+                                        <td>231.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Say em</td>
+                                        <td>1000.123</td>
+                                        <td>231.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Say em</td>
+                                        <td>1000.123</td>
+                                        <td>231.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Value 1</td>
+                                        <td>Value 2</td>
+                                        <td>Value 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Value 1</td>
+                                        <td>Value 2</td>
+                                        <td>Value 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Value 1</td>
+                                        <td>Value 2</td>
+                                        <td>Value 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Value 1</td>
+                                        <td>Value 2</td>
+                                        <td>Value 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Value 1</td>
+                                        <td>Value 2</td>
+                                        <td>Value 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Value 1</td>
+                                        <td>Value 2</td>
+                                        <td>Value 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Value 1</td>
+                                        <td>Value 2</td>
+                                        <td>Value 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Value 1</td>
+                                        <td>Value 2</td>
+                                        <td>Value 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Value 1</td>
+                                        <td>Value 2</td>
+                                        <td>Value 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Value 1</td>
+                                        <td>Value 2</td>
+                                        <td>Value 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Value 1</td>
+                                        <td>Value 2</td>
+                                        <td>Value 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Value 1</td>
+                                        <td>Value 2</td>
+                                        <td>Value 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Value 1</td>
+                                        <td>Value 2</td>
+                                        <td>Value 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Value 1</td>
+                                        <td>Value 2</td>
+                                        <td>Value 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Value 1</td>
+                                        <td>Value 2</td>
+                                        <td>Value 3</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
+                    <a href="" class="more">Xem thêm</a>
                 </div>
             </div>
         </div>
-      </div>
+    </div>
+    </div>
 
 
-      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript">
-    google.charts.load("current", {packages:['corechart']});
-    google.charts.setOnLoadCallback(drawChart);
-    function drawChart() {
-      var data = google.visualization.arrayToDataTable([
-        ["Element", "Density", { role: "style" } ],
-        ["Thứ 2", 8.94, "#b87333"],
-        ["Thứ 3", 8.94, "#b87333"],
-        ["Thứ 4", 8.94, "#b87333"],
-        ["Thứ 5", 8.94, "#b87333"],
-        ["Thứ 6", 10.49, "silver"],
-        ["Thứ 7", 19.30, "gold"],
-        ["Chủ nhật", 21.45, "color: #e5e4e2"]
-      ]);
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ["Element", "Density", { role: "style" }],
+                ["Thứ 2", 8.94, "#b87333"],
+                ["Thứ 3", 8.94, "#b87333"],
+                ["Thứ 4", 8.94, "#b87333"],
+                ["Thứ 5", 8.94, "#b87333"],
+                ["Thứ 6", 10.49, "silver"],
+                ["Thứ 7", 19.30, "gold"],
+                ["Chủ nhật", 21.45, "color: #e5e4e2"]
+            ]);
 
-      var view = new google.visualization.DataView(data);
-      view.setColumns([0, 1,
-                       { calc: "stringify",
-                         sourceColumn: 1,
-                         type: "string",
-                         role: "annotation" },
-                       2]);
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0, 1,
+                {
+                    calc: "stringify",
+                    sourceColumn: 1,
+                    type: "string",
+                    role: "annotation"
+                },
+                2]);
 
-      var options = {
-        title: "Số lượng người dùng trong tuần",
-        width: 400,
-        height: 300,
-        bar: {groupWidth: "95%"},
-        legend: { position: "none" },
-      };
-      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
-      chart.draw(view, options);
-  }
-  </script>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript">
-    google.charts.load('current', {'packages':['corechart']});
-    google.charts.setOnLoadCallback(drawChart);
+            var options = {
+                title: "Số lượng người dùng trong tuần",
+                width: 400,
+                height: 300,
+                bar: { groupWidth: "95%" },
+                legend: { position: "none" },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+            chart.draw(view, options);
+        }
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
 
-    function drawChart() {
-      var data = google.visualization.arrayToDataTable([
-        ['Tháng', 'Thường', 'Premium'],
-        ['Tháng 1',  1000,      400],
-        ['Tháng 2',  1170,      460],
-        ['Tháng 3',  660,       1120],
-        ['Tháng 4',  1030,      540]
-      ]);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Tháng', 'Thường', 'Premium'],
+                ['Tháng 1', 1000, 400],
+                ['Tháng 2', 1170, 460],
+                ['Tháng 3', 660, 1120],
+                ['Tháng 4', 1030, 540]
+            ]);
 
-      var options = {
-        title: 'Số lượng người dùng theo tháng',
-        width: 400,
-        height: 300,
-      };
+            var options = {
+                title: 'Số lượng người dùng theo tháng',
+                width: 400,
+                height: 300,
+            };
 
-      var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
-      chart.draw(data, options);
-    }
-  </script>
+            var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
 </body>
+
 </html>
